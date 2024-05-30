@@ -26,8 +26,11 @@ for col in df.axes[1]:
                         suma_not_alive += df[col][i]
                         nr_not_alive += 1
 
-            media_alive = suma_alive // nr_alive
-            media_not_alive = suma_not_alive // nr_not_alive
+            media_alive = suma_alive / nr_alive
+            media_not_alive = suma_not_alive / nr_not_alive
+
+            media_alive = round(media_alive, 1)
+            media_not_alive = round(media_not_alive, 1)
 
             for i in range(nr_rows):
                 if df[col].isna()[i] == 1:
