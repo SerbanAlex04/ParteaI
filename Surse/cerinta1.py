@@ -17,7 +17,7 @@ else:
 
 print(f"Numarul de coloane: {nr_col}\n")
 print(f"Tiprile de date ale coloanelor:\n{types}\n")
-print(f"Numarul de valori nule pe fiecare coloana:\n{null_values}\n")
+print(f"Numarul de valori lipsa pe fiecare coloana:\n{null_values}\n")
 print(f"Numarul de linii: {nr_rows}\n")
 if is_dup == 0:
     print("Nu exista linii duplicate")
